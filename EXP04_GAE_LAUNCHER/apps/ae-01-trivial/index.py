@@ -1,0 +1,5 @@
+print 'Content-Type: text/plain'
+print ''
+print 'Hello there Chuck'
+print 'Cloud Computing Laboratory - Experiment 04: Google App Engine Launcher'
+print 'Application running at http://localhost:8080/'
