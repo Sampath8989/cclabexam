@@ -9,7 +9,9 @@ This folder contains the master download manifest, automated downloader, and int
 | File | Purpose |
 | :--- | :--- |
 | **`download_manifest.csv`** | Master CSV table cataloging every software package, version, filename, official download URL, local folder path, file size in bytes, SHA256 checksum, and status. |
-| **`download_all.ps1`** | PowerShell script to download, verify, and place all missing legacy software components directly into their respective experiment folders. |
+| **`download_bundle.ps1`** | Direct PowerShell downloader to fetch packages for all experiments or a specific experiment (`EXP01` to `EXP08`) directly into its target folder with progress bar and SHA256 verification. |
+| **`download_bundle.bat`** | Windows Command Prompt / Double-click launcher for `download_bundle.ps1`. |
+| **`download_all.ps1`** | Automated manifest-driven downloader with retry logic and integrity checking. |
 | **`verify_all.ps1`** | PowerShell script to compute SHA256 checksums of all local files, compare them against the manifest, and produce an integrity audit report. |
 | **`README.md`** | Usage documentation for the tools suite. |
 
